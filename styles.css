@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --spotify-green: #1db954;
+  --spotify-grey: #8a8a8a;
+  --spotify-white: #eaeaea;
+  --spotify-dark-bg: #181818;
+  --spotify-darker-bg: #121212;
+}
+h4,
+.podcast-title {
+  color: var(--spotify-white);
+}
+.see-all {
+  position: absolute;
+  top: 31%;
+  left: 90%;
+  right: 0;
+  color: var(--spotify-grey);
+}
+.images {
+  width: 130px;
+  height: 120px;
+  object-fit: cover;
+  margin: 15px;
+  padding-left: 10px;
+  box-shadow: cadetblue;
+  border-radius: 15%;
+}
+#round-img {
+  border-radius: 50%;
+}
+.card {
+  background-color: rgb(36, 33, 33);
+  opacity: 0.7;
+}
+h5,
+p {
+  color: var(--spotify-white);
+}
+h5 {
+  font-size: 18px;
+}
+.card:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+.see-all2 {
+  position: absolute;
+  right: 0;
+  left: 90%;
+  top: 68%;
+  color: var(--spotify-grey);
+}
+
+
+.centre-section-container {
+    background: var(--spotify-darker-bg);
+}
+
+
+
+
+/* start of navbar styles */
+body {
+    font-family: var(--main-font);
+    font-weight: 500;
+    background: var(--spotify-dark-bg);
+}
+
+.navbar-column {
+    background: black;
+}
+
+.navbar-main-container {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+#main-logo-white, #main-logo-black {
+    max-width: 130px;
+    padding-left: 2%;
+}
+
+.navbar-main-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-main-container a {
+  color: var(--spotify-grey);
+  display: block;
+  text-decoration: none;
+}
+
+.main-links-container a,
+.secondary-links-container a,
+.install-app {
+  transition: color 0.5s;
+}
+
+.navbar-main-container a:hover {
+  color: var(--spotify-white);
+  display: block;
+}
+
+.navbar-main-container a:active {
+  color: var(--spotify-white);
+}
+
+.main-links-container,
+.secondary-links-container,
+.install-app,
+.playlist-links-container {
+  font-size: 0.8rem;
+}
+.main-links-container,
+.secondary-links-container,
+.install-app {
+  font-weight: 700;
+}
+
+.navbar-active-link {
+    background: var(--spotify-grey);
+    color: var(--spotify-white)!important;
+    border-radius: 3px;
+}
+
+.secondary-links-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--spotify-grey);
+}
+
+.main-links-container a,
+.secondary-links-container a,
+.playlist-links-container a {
+  padding: 8px 8px;
+}
+
+ion-icon {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+#create-playlist,
+#liked-songs {
+  font-size: 18px;
+  padding: 6px 6px;
+}
+
+#create-playlist {
+    background: var(--spotify-white);
+    color: var(--spotify-dark-bg);
+}
+
+#liked-songs {
+  color: var(--spotify-white);
+  background: rgb(51, 17, 168);
+  background: linear-gradient(
+    135deg,
+    rgba(51, 17, 168, 1) 0%,
+    rgba(102, 101, 160, 1) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.loginbutton{
+    width: 180px;
+    background-color:rgb(46, 43, 43);
+    color: white;
+    font-style:var(--main-font);
+    border-radius: 10px;
+    
+}
+.signupbutton{
+    width: 180px;
+    background-color:rgb(53, 50, 50);
+    border-radius: 10px;
+    color: white;
+    font-style:var(--main-font)
+
+}
+.songcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.songcontainer > * div {
+  max-height: 350px;
+  min-height: 350px;
+  margin-bottom: 15px;
+}
